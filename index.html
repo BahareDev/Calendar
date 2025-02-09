@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <h2 class="h2 text-center my-4">Calendar</h2>
+
+      <div
+        class="calender-header d-flex justify-content-center my-3 align-items-center gap-3"
+      >
+        <button type="button" class="prevBtn btn btn-primary">
+          <i class="bi bi-chevron-compact-left"></i>
+        </button>
+        <p id="showMonth" class="m-0"></p>
+        <button type="button" class="nextBtn btn btn-primary">
+          <i class="bi bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <table class="calender-body">
+        <thead>
+          <tr>
+            <th>Sat</th>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+          </tr>
+        </thead>
+
+        <tbody id="table"></tbody>
+      </table>
+    </main>
+
+    <div
+      class="modal fade"
+      id="eventModal"
+      tabindex="-1"
+      aria-labelledby="eventModalLabel"
+      innert
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close cross"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="modal-body">
+            <div class="info">
+              <p id="date" class="">Completed info</p>
+            </div>
+
+            <hr />
+
+            <div class="event">
+              <form class="event-form d-flex">
+                <input
+                  class="form-control event-input me-2"
+                  type="text"
+                  placeholder="Enter event name"
+                  required
+                />
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+            </div>
+
+            <hr />
+
+            <div class="eventList">
+              <h6 class="fw-bold">Event List</h6>
+              <ul class="list-group eventlist">
+                <!-- event list shows here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

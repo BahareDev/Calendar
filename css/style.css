@@ -11,14 +11,13 @@ td {
   padding: 1rem;
 }
 
+ul {
+  margin: 1rem;
+}
+
 .day:hover {
   background-color: lightcoral;
   border-radius: 100%;
-}
-
-main {
-  display: flex;
-  justify-content: center;
 }
 
 .currentDay {
@@ -34,8 +33,4 @@ main {
   padding: 1rem;
   margin: 15% auto;
   width: 80%;
-}
-
-ul {
-  margin: 1rem;
 }

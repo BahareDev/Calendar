@@ -30,43 +30,12 @@ main {
   display: none;
 }
 
-.backdrop {
-  position: fixed;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  display: none;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /*Full height */
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .modal-content {
-  background-color: #fefefe;
-  border: 1px solid #000;
-  background-color: #fff;
   padding: 1rem;
   margin: 15% auto;
   width: 80%;
 }
 
-.container {
-  padding: 1rem;
-}
-
-ul{
+ul {
   margin: 1rem;
-}
-
-.cross {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
 }
